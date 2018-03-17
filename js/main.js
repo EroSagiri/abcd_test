@@ -106,7 +106,7 @@ function test_hupo(hypo) {
 
 
 var problem_list = [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9];
-
+(function(){
 for (var v0 = 0; v0 < 4; v0 ++) {
 	for (var v1 = 0; v1 < 4; v1 ++) {
 		for (var v2 = 0; v2 < 4; v2 ++) {
@@ -131,4 +131,4 @@ for (var v0 = 0; v0 < 4; v0 ++) {
 			}
 		}
 	}
-}
+}})();
