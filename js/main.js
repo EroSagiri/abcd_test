@@ -120,7 +120,7 @@ for (var v0 = 0; v0 < 4; v0 ++) {
 										var hypo = [String.fromCharCode(v0 + 65), String.fromCharCode(v1 + 65), String.fromCharCode(v2 + 65), String.fromCharCode(v3 + 65), String.fromCharCode(v4 + 65), String.fromCharCode(v5 + 65), String.fromCharCode(v6 + 65), String.fromCharCode(v7 + 65), String.fromCharCode(v8 + 65), String.fromCharCode(v9 + 65)];
 										if (test_hupo(hypo)) {
 											console.log(hypo)
-											break;
+											return;
 										}
 									}
 								}
