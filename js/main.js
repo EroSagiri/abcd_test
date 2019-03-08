@@ -94,7 +94,8 @@ function p9(ans, hypo) {
 	return false;
 }
 
-function test_hupo(hypo) {
+var problem_list = [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9];
+function test_hypo(hypo) {
 	for(var i = 0; i < hypo.length; i ++) {
 		if (!problem_list[i](hypo[i], hypo)) {
 			return false;
@@ -105,7 +106,7 @@ function test_hupo(hypo) {
 
 
 
-var problem_list = [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9];
+
 (function(){
 for (var v0 = 0; v0 < 4; v0 ++) {
 	for (var v1 = 0; v1 < 4; v1 ++) {
@@ -118,7 +119,7 @@ for (var v0 = 0; v0 < 4; v0 ++) {
 								for(var v8 = 0; v8 < 4; v8 ++) {
 									for(var v9 = 0; v9 < 4; v9 ++) {
 										var hypo = [String.fromCharCode(v0 + 65), String.fromCharCode(v1 + 65), String.fromCharCode(v2 + 65), String.fromCharCode(v3 + 65), String.fromCharCode(v4 + 65), String.fromCharCode(v5 + 65), String.fromCharCode(v6 + 65), String.fromCharCode(v7 + 65), String.fromCharCode(v8 + 65), String.fromCharCode(v9 + 65)];
-										if (test_hupo(hypo)) {
+										if (test_hypo(hypo)) {
 											console.log(hypo)
 											return;
 										}
